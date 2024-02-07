@@ -1,0 +1,8 @@
+<div {{ attributes }}>
+    <strong>Showing child component {{ this.even ? 'A' : 'B'}} <button data-action="live#action" data-action-name="switch">Switch</button></strong>
+    {% if this.even %}
+        {{ component('child_a') }}
+    {% else %}
+        {{ component('child_b') }}
+    {% endif %}
+</div>
